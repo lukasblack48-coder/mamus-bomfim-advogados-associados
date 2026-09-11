@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4efe4;
+  --fg: #12141a;
+  --muted: #5c564c;
+  --card: #fffdf8;
+  --line: rgba(18, 20, 26, 0.12);
+}
+.dark {
+  --bg: #0e1016;
+  --fg: #f4efe4;
+  --muted: #b8b0a2;
+  --card: #161922;
+  --line: rgba(244, 239, 228, 0.12);
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+.grain {
+  background-image: radial-gradient(rgba(184,146,74,0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
